@@ -1,8 +1,8 @@
 <?php
 	
 	$data = array (
-		'appkey' => 'BC-171d6106d4294fffa7c2529058f9f085',
-		'channel' => 'demo_channel',
+		'appkey' => 'BC-171d6106d4294fffa7c2529058f9f085',	//your GoEasy AppKey, if you don't have, get it from http://goeasy.io
+		'channel' => 'demo_channel',	//a channel name, messages in a same channel(push and receive) are transparent
 		'content' => 'Hello, I am PHP'
 	);
 	
