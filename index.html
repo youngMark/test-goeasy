@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="http://cdn.goeasy.io/goeasy.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var goEasy = new GoEasy({
+				appkey: 'BC-171d6106d4294fffa7c2529058f9f085' //your GoEasy AppKey, if you don't have, get it from http://goeasy.io
+			});
+			
+			//push
+			goEasy.publish({
+				channel: 'demo_channel',  //a channel name, messages in a same channel(push and receive) are transparent
+				message: 'Hello world!'
+			});
+			
+			//receive
+			goEasy.subscribe({
+				channel: 'demo_channel',
+				onMessage: function(message) {
+					alert('receive：' + message.content);
+				}
+			});
+			
+		</script>
+	</body>
+</html>
